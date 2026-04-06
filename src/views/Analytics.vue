@@ -1,5 +1,5 @@
 <template>
-  <div class="text-amber-200 text-5xl">
-    This is working Analytics
+  <div class="text-red-700 text-5xl">
+    This is the Analytics page, its is not finished.
   </div>
 </template>

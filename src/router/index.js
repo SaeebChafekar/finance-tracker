@@ -9,10 +9,11 @@ const routes = [
   { path: '/', component: Dashboard },
   { path: '/analytics', component: Analytics },
   { path: '/subscriptions', component: Subscriptions },
-  { path: '/transactions', lable: Transactions },
+  { path: '/transactions', component: Transactions },
 ]
 
 export default createRouter({
-  history: createWebHistory(),
+  // history: createWebHistory('/finance-tracker/'),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes,
 })

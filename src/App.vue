@@ -7,7 +7,7 @@ import Sidebar from './components/Sidebar.vue'
 
     <Sidebar />
     
-    <main>
+    <main class="ml-52">
       <RouterView />
     </main>
 
