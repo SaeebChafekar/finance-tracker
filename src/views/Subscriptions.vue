@@ -51,11 +51,11 @@
 import { ref, computed } from 'vue'
 
 const subscriptions = ref([
-  { id: 1, name: 'Netflix',   amount: 15.99, cycle: 'monthly', category: 'Entertainment', nextDate: '2025-04-01' },
-  { id: 2, name: 'Spotify',   amount: 9.99,  cycle: 'monthly', category: 'Entertainment', nextDate: '2025-04-05' },
-  { id: 3, name: 'iCloud',    amount: 2.99,  cycle: 'monthly', category: 'Utilities',     nextDate: '2025-04-08' },
-  { id: 4, name: 'Adobe CC',  amount: 54.99, cycle: 'monthly', category: 'Other',         nextDate: '2025-04-15' },
-  { id: 5, name: 'GitHub Pro',amount: 4.00,  cycle: 'monthly', category: 'Other',         nextDate: '2025-04-18' },
+  { id: 1, name: 'Netflix',   amount: 640, cycle: 'monthly', category: 'Entertainment', nextDate: '2025-04-01' },
+  { id: 2, name: 'Spotify',   amount: 180,  cycle: 'monthly', category: 'Entertainment', nextDate: '2025-04-05' },
+  { id: 3, name: 'iCloud',    amount: 240,  cycle: 'monthly', category: 'Utilities',     nextDate: '2025-04-08' },
+  { id: 4, name: 'Adobe CC',  amount: 990, cycle: 'monthly', category: 'Other',         nextDate: '2025-04-15' },
+  { id: 5, name: 'GitHub Pro',amount: 250,  cycle: 'monthly', category: 'Other',         nextDate: '2025-04-18' },
 ])
 
 const monthlyTotal = computed(() =>
