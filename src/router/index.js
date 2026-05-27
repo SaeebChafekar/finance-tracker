@@ -1,19 +1,15 @@
-import { createRouter, createWebHistory } from "vue-router";
-
-import Dashboard from "../views/Dashboard.vue";
-import Analytics from "../views/Analytics.vue";
-import Subscriptions from "../views/Subscriptions.vue";
-import Transactions from "../views/Transactions.vue";
-
-const routes = [
-  { path: '/', component: Dashboard },
-  { path: '/analytics', component: Analytics },
-  { path: '/subscriptions', component: Subscriptions },
-  { path: '/transactions', component: Transactions },
-]
+import { createRouter, createWebHistory } from 'vue-router'
+import Dashboard     from '../views/Dashboard.vue'
+import Transactions  from '../views/Transactions.vue'
+import Subscriptions from '../views/Subscriptions.vue'
+import Analytics     from '../views/Analytics.vue'
 
 export default createRouter({
-  // history: createWebHistory('/finance-tracker/'),
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes,
+  routes: [
+    { path: '/',               component: Dashboard     },
+    { path: '/transactions',   component: Transactions  },
+    { path: '/subscriptions',  component: Subscriptions },
+    { path: '/analytics',      component: Analytics     },
+  ]
 })
